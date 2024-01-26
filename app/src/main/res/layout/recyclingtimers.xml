@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_pertanyaan"
+    android:layout_width="match_parent"
+    android:layout_height="96dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginTop="12dp"
+    android:layout_marginRight="16dp"
+    android:clickable="true"
+    android:foreground="?selectableItemBackground"
+    card_view:cardBackgroundColor="#3E3E3E"
+    card_view:cardCornerRadius="8dp"
+    card_view:contentPadding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/play_button"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="#3E3E3E"
+            android:src="@drawable/play_button" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/timerName"
+                android:layout_width="160dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="5dp"
+                android:text="Timer 1"
+                android:textColor="#FFF"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/timeLeft"
+                android:layout_width="73dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="5dp"
+                android:gravity="end|center_vertical"
+                android:text="Time Left"
+                android:textColor="#FFF" />
+
+            <TextView
+                android:id="@+id/timeLeftNum"
+                android:layout_width="44dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="16dp"
+                android:gravity="end|center_vertical"
+                android:text="00:00"
+                android:textColor="#FFF" />
+
+            <ImageButton
+                android:id="@+id/play_reset"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/reset_button"
+                android:layout_marginTop="10dp"
+                android:background="#3E3E3E"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="44dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="top"
+                android:textColor="#FFF"
+                android:text="Progress Bar" />
+
+            <ProgressBar
+                android:id="@+id/progress"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="#000"
+                android:max="100"
+                android:progress="50" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
